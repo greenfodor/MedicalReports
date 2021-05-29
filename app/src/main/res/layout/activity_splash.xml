@@ -11,5 +11,5 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="false"
         app:lottie_rawRes="@raw/splash_lottie"
-        app:lottie_speed="2" />
+        app:lottie_speed="3" />
 </FrameLayout>

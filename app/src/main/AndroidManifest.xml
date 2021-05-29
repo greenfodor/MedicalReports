@@ -38,5 +38,9 @@
         <activity
             android:name=".presentation.startup.LoginActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.home.HomeActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>

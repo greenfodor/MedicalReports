@@ -6,13 +6,14 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.greenfodor.medicalreports.databinding.ActivitySplashBinding
+import com.greenfodor.medicalreports.presentation.home.HomeActivity
 import com.greenfodor.medicalreports.presentation.startup.LandingActivity
 import com.greenfodor.medicalreports.utils.SessionUtils
 import com.greenfodor.medicalreports.utils.viewBinding
 
 class SplashActivity : AppCompatActivity() {
     companion object {
-        private const val SPLASH_SCREEN_DELAY = 2000L
+        private const val SPLASH_SCREEN_DELAY = 1333L
     }
 
     private val binding by viewBinding(ActivitySplashBinding::inflate)
@@ -35,7 +36,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun startHandler() = handler.postDelayed({
         val clazz = when {
-            isUserLoggedIn() -> LandingActivity::class.java
+            isUserLoggedIn() -> HomeActivity::class.java
             else -> LandingActivity::class.java
         }
         startNextActivity(clazz)
