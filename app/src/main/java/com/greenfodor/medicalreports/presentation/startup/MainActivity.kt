@@ -1,7 +1,8 @@
-package com.greenfodor.medicalreports
+package com.greenfodor.medicalreports.presentation.startup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.greenfodor.medicalreports.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
