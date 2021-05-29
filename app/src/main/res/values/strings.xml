@@ -13,4 +13,5 @@
     <!-- Errors -->
     <string name="no_internet_error_message">You\'re offline. Check your connection and try again.</string>
     <string name="something_went_wrong">Something went wrong, please try again!</string>
+    <string name="nfc_hint">Tap the bracelet to retrieve\nthe patient\'s information</string>
 </resources>
