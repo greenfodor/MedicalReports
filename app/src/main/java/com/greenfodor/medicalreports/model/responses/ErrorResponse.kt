@@ -1,4 +1,4 @@
-package com.greenfodor.medicalreports.model
+package com.greenfodor.medicalreports.model.responses
 
 import com.google.gson.annotations.SerializedName
 
