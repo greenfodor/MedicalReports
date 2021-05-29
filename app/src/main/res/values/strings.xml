@@ -5,6 +5,10 @@
     <string name="sign_out">Sign Out</string>
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
+    <string name="name_hint">Name</string>
+
+    <!-- Register response -->
+    <string name="register_success">User register successfully. Please wait for an administrator to assign you a role.</string>
 
     <!-- Errors -->
     <string name="no_internet_error_message">You\'re offline. Check your connection and try again.</string>

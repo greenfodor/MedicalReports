@@ -32,11 +32,15 @@
         </activity>
 
         <activity
-            android:name=".presentation.startup.LandingActivity"
+            android:name=".presentation.startup.activities.LandingActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".presentation.startup.LoginActivity"
+            android:name=".presentation.startup.activities.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.startup.activities.RegisterActivity"
             android:screenOrientation="portrait" />
 
         <activity
