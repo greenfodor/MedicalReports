@@ -34,7 +34,7 @@ abstract class SafeApiRequest {
             error?.let {
                 try {
                     val apiResponse = Gson().fromJson(it, ApiResponse::class.java)
-                    val errorMessage = if (!apiResponse.data.isNullOrEmpty()) apiResponse.data else apiResponse.message
+                    val errorMessage = if (!apiResponse?.data.isNullOrEmpty()) apiResponse.data else apiResponse.message
                     message.append(errorMessage)
                 } catch (e: JSONException) {
                     Log.e("ApiError", e.message, e)

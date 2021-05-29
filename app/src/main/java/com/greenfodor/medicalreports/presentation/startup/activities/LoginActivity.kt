@@ -1,4 +1,4 @@
-package com.greenfodor.medicalreports.presentation.startup
+package com.greenfodor.medicalreports.presentation.startup.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import com.greenfodor.medicalreports.databinding.ActivityLoginBinding
 import com.greenfodor.medicalreports.presentation.home.HomeActivity
+import com.greenfodor.medicalreports.presentation.startup.viewmodels.LoginViewModel
 import com.greenfodor.medicalreports.utils.viewBinding
 import org.koin.android.viewmodel.ext.android.viewModel
 
@@ -64,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun startHomeScreen() {
         val intent = Intent(this, HomeActivity::class.java)
-        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(intent)
     }
 }

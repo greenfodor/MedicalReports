@@ -1,4 +1,4 @@
-package com.greenfodor.medicalreports.presentation.startup
+package com.greenfodor.medicalreports.presentation.startup.viewmodels
 
 import androidx.lifecycle.viewModelScope
 import com.greenfodor.medicalreports.model.dbo.User
@@ -7,7 +7,9 @@ import com.greenfodor.medicalreports.persistance.Repository
 import com.greenfodor.medicalreports.presentation.base.BaseViewModel
 import com.greenfodor.medicalreports.utils.SessionUtils
 import com.greenfodor.medicalreports.utils.SingleLiveEvent
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class LoginViewModel(private val repository: Repository) : BaseViewModel() {
 
@@ -17,7 +19,7 @@ class LoginViewModel(private val repository: Repository) : BaseViewModel() {
         isLoading.value = true
         viewModelScope.launch {
             try {
-                val authResponse = repository.login(email, password)
+                val authResponse = withContext(Dispatchers.IO) { repository.login(email, password) }
                 isLoading.value = false
 
                 SessionUtils.saveSessionToken(authResponse.token)

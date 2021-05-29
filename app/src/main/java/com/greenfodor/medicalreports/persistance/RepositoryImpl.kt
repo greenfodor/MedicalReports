@@ -1,5 +1,6 @@
 package com.greenfodor.medicalreports.persistance
 
+import com.greenfodor.medicalreports.model.requests.CreateUserRequest
 import com.greenfodor.medicalreports.model.requests.LoginRequest
 import com.greenfodor.medicalreports.model.responses.LoginResponse
 import com.greenfodor.medicalreports.networking.AppApi
@@ -10,5 +11,9 @@ class RepositoryImpl(private val appApi: AppApi) : Repository, KoinComponent, Sa
 
     override suspend fun login(email: String, password: String): LoginResponse {
         return apiRequest { appApi.login(LoginRequest(email, password)) }
+    }
+
+    override suspend fun createUser(name: String, email: String, password: String): String {
+        return apiRequest { appApi.createUser(CreateUserRequest(name, email, password)) }
     }
 }
