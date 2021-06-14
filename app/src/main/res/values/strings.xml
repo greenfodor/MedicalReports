@@ -22,8 +22,15 @@
     <string name="generate_report">Generate Report</string>
     <string name="generate">Generate</string>
 
+
     <string name="report_no">Report No. %d</string>
     <string name="author_name">by %s</string>
+    <string name="author_name_label">Author: %s</string>
+    <string name="general_condition_label">General Condition: %s</string>
+    <string name="heart_action_label">Heart Action: %s</string>
+    <string name="heart_sound_label">Heart Sound: %s</string>
+    <string name="breathing_label">Breathing: %s</string>
+    <string name="head_injury_label">Head Injury: %s</string>
 
     <!-- Register response -->
     <string name="register_success">User register successfully. Please wait for an administrator to assign you a role.</string>

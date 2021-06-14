@@ -1,7 +1,10 @@
 package com.greenfodor.medicalreports.model.responses
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class GetReportResponse(
     @SerializedName("reportNo")
     val reportNo: Int,
@@ -19,4 +22,4 @@ data class GetReportResponse(
     val breathing: Int?,
     @SerializedName("headInjury")
     val headInjury: Int?
-)
+) : Parcelable

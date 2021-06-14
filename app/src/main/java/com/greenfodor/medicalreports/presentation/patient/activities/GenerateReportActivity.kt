@@ -1,5 +1,6 @@
 package com.greenfodor.medicalreports.presentation.patient.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -55,6 +56,10 @@ class GenerateReportActivity : AppCompatActivity() {
         generateReportViewModel.onReportGenerated.observe(this) { report ->
             report ?: return@observe
 
+            val intent = Intent(this, ViewReportActivity::class.java).apply {
+                putExtra(ViewReportActivity.REPORT_EXTRA_KEY, report)
+            }
+            startActivity(intent)
             finish()
         }
 

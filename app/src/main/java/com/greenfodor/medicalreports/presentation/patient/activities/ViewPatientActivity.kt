@@ -71,6 +71,15 @@ class ViewPatientActivity : AppCompatActivity() {
             adapter.submitList(reports)
         }
 
+        getReportsViewModel.onReportLoaded.observe(this) { report ->
+            report ?: return@observe
+
+            val intent = Intent(this, ViewReportActivity::class.java).apply {
+                putExtra(ViewReportActivity.REPORT_EXTRA_KEY, report)
+            }
+            startActivity(intent)
+        }
+
         getReportsViewModel.isLoading.observe(this) { isLoading ->
             isLoading ?: return@observe
 
