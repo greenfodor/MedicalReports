@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/patient"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTv"
+            tools:text="Name: George" />
+
+        <TextView
+            android:id="@+id/dobTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameTv"
+            tools:text="Date of Birth: 03-11-1997" />
+
+        <TextView
+            android:id="@+id/genderTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dobTv"
+            tools:text="Gender: Male" />
+
+        <TextView
+            android:id="@+id/generalConditionTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/general_condition"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/genderTv" />
+
+        <RadioGroup
+            android:id="@+id/generalConditionRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/generalConditionTv">
+
+            <RadioButton
+                android:id="@+id/consciousRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/conscious"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/somnolentRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/somnolent"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/soporRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sopor"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/comaRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coma"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/deliriumRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delirium"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/desorientatedRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/desorientated"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/sallowRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sallow"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/heartActionTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/heart_action"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/generalConditionRg" />
+
+        <RadioGroup
+            android:id="@+id/heartActionRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heartActionTv">
+
+            <RadioButton
+                android:id="@+id/rhythmicRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rhythmic"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/arhythmicRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/arhythmic"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/gallopingRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/galopping"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/heartSoundTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/heart_sound"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heartActionRg" />
+
+        <RadioGroup
+            android:id="@+id/heartSoundRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heartSoundTv">
+
+            <RadioButton
+                android:id="@+id/clearRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clear"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/dullRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dull"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/inaudibleRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inaudible"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/breathingTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/breathing"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heartSoundRg" />
+
+        <RadioGroup
+            android:id="@+id/breathingRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/breathingTv">
+
+            <RadioButton
+                android:id="@+id/vesicularRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vesicular"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/weakVesicularRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weak_vesicular"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/prolongedExpiriumRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prolonged_expirium"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/parodoxicalRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/parodoxical"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/additionalRespirationEffortRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/additional_respiration_effort"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/headInjuryTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/head_injury"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/breathingRg" />
+
+        <RadioGroup
+            android:id="@+id/headInjuryRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headInjuryTv">
+
+            <RadioButton
+                android:id="@+id/parietalScalpWoundsRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/parietal_scalp_wounds"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/hematomaRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hematoma"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/liquidBloodNoseEarsRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/liquid_blood_in_nose_and_or_ears"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/periorbitalChangesRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/periorbital_changes"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/facialInjuriesRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/facial_injuries"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/generateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="@string/generate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headInjuryRg" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadingLottie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/generateBtn"
+            app:layout_constraintStart_toEndOf="@id/generateBtn"
+            app:layout_constraintTop_toTopOf="@id/generateBtn"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading_lottie" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

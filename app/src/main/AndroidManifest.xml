@@ -44,7 +44,31 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".presentation.home.HomeActivity"
+            android:name=".presentation.home.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.home.activities.RegisterPatientActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.home.activities.WriteTagActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.home.activities.ReadTagActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.patient.activities.ViewPatientActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.patient.activities.GenerateReportActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.patient.activities.ViewReportActivity"
             android:screenOrientation="portrait" />
     </application>
 </manifest>

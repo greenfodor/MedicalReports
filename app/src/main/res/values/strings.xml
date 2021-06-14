@@ -6,6 +6,31 @@
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
     <string name="name_hint">Name</string>
+    <string name="date_hint">Date of Birth</string>
+    <string name="gender_hint">Gender</string>
+    <string name="register">Register</string>
+    <string name="register_patient">Register Patient</string>
+    <string name="read_patient_tag">Read Patient Tag</string>
+
+    <string name="write_successful_title">Write Successful</string>
+    <string name="write_successful_description">The patient\'s ID was successfully written to the bracelet.</string>
+    <string name="done">Done</string>
+
+    <string name="name_label">Name: %s</string>
+    <string name="dob_label">Date of Birth: %s</string>
+    <string name="gender_label">Gender: %s</string>
+    <string name="generate_report">Generate Report</string>
+    <string name="generate">Generate</string>
+
+
+    <string name="report_no">Report No. %d</string>
+    <string name="author_name">by %s</string>
+    <string name="author_name_label">Author: %s</string>
+    <string name="general_condition_label">General Condition: %s</string>
+    <string name="heart_action_label">Heart Action: %s</string>
+    <string name="heart_sound_label">Heart Sound: %s</string>
+    <string name="breathing_label">Breathing: %s</string>
+    <string name="head_injury_label">Head Injury: %s</string>
 
     <!-- Register response -->
     <string name="register_success">User register successfully. Please wait for an administrator to assign you a role.</string>
@@ -13,4 +38,35 @@
     <!-- Errors -->
     <string name="no_internet_error_message">You\'re offline. Check your connection and try again.</string>
     <string name="something_went_wrong">Something went wrong, please try again!</string>
+    <string name="nfc_hint">Tap the bracelet to retrieve\nthe patient\'s information</string>
+    <string name="nfc_write_hint">Tap the bracelet to register\nit to the patient</string>
+    <string name="patient">Patient</string>
+    <string name="general_condition">General Condition</string>
+    <string name="conscious">Conscious</string>
+    <string name="desorientated">Desorientated</string>
+    <string name="sallow">Sallow</string>
+    <string name="delirium">Delirium</string>
+    <string name="coma">Coma</string>
+    <string name="sopor">Sopor</string>
+    <string name="somnolent">Somnolent</string>
+    <string name="heart_action">Heart Action</string>
+    <string name="rhythmic">Rhythmic</string>
+    <string name="galopping">Galopping</string>
+    <string name="arhythmic">Arhythmic</string>
+    <string name="heart_sound">Heart Sound</string>
+    <string name="clear">Clear</string>
+    <string name="dull">Dull</string>
+    <string name="inaudible">Inaudible</string>
+    <string name="breathing">Breathing</string>
+    <string name="vesicular">Vesicular</string>
+    <string name="weak_vesicular">Weak Vesicular</string>
+    <string name="prolonged_expirium">Prolonged Expirium</string>
+    <string name="parodoxical">Parodoxical</string>
+    <string name="additional_respiration_effort">Additional Respiration Effort</string>
+    <string name="head_injury">Head Injury</string>
+    <string name="parietal_scalp_wounds">Parietal Scalp Wounds</string>
+    <string name="hematoma">Hematoma</string>
+    <string name="liquid_blood_in_nose_and_or_ears">Liquid/Blood in Nose and/or Ears</string>
+    <string name="periorbital_changes">Periorbital Changes</string>
+    <string name="facial_injuries">Facial Injuries</string>
 </resources>

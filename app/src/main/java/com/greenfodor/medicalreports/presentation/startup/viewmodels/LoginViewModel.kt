@@ -23,7 +23,10 @@ class LoginViewModel(private val repository: Repository) : BaseViewModel() {
                 isLoading.value = false
 
                 SessionUtils.saveSessionToken(authResponse.token)
-                onLoginUser.value = authResponse.user?.toUser()
+                val user = authResponse.user?.toUser() ?: return@launch
+
+                SessionUtils.saveCurrentUser(user)
+                onLoginUser.value = user
 
             } catch (e: ErrorResponse) {
                 showError.value = e

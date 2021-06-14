@@ -7,7 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import com.greenfodor.medicalreports.databinding.ActivityLoginBinding
-import com.greenfodor.medicalreports.presentation.home.HomeActivity
+import com.greenfodor.medicalreports.presentation.home.activities.HomeActivity
 import com.greenfodor.medicalreports.presentation.startup.viewmodels.LoginViewModel
 import com.greenfodor.medicalreports.utils.viewBinding
 import org.koin.android.viewmodel.ext.android.viewModel
