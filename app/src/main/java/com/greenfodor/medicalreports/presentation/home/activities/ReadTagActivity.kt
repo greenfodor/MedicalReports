@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.greenfodor.medicalreports.databinding.ActivityReadTagBinding
 import com.greenfodor.medicalreports.model.dbo.Patient
 import com.greenfodor.medicalreports.presentation.home.viewmodels.GetPatientViewModel
-import com.greenfodor.medicalreports.presentation.patient.ViewPatientActivity
+import com.greenfodor.medicalreports.presentation.patient.activities.ViewPatientActivity
 import com.greenfodor.medicalreports.utils.NfcUtil
 import com.greenfodor.medicalreports.utils.viewBinding
 import org.koin.android.viewmodel.ext.android.viewModel

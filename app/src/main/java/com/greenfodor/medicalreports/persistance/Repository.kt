@@ -1,8 +1,6 @@
 package com.greenfodor.medicalreports.persistance
 
-import com.greenfodor.medicalreports.model.responses.GetPatientResponse
-import com.greenfodor.medicalreports.model.responses.LoginResponse
-import com.greenfodor.medicalreports.model.responses.RegisterPatientResponse
+import com.greenfodor.medicalreports.model.responses.*
 import org.joda.time.DateTime
 
 interface Repository {
@@ -14,4 +12,17 @@ interface Repository {
     suspend fun registerPatient(name: String, dob: DateTime, gender: String): RegisterPatientResponse
 
     suspend fun getPatient(patientId: String): GetPatientResponse
+
+    suspend fun getReports(patientId: String): List<GetPatientReportsResponse>
+
+    suspend fun getReport(patientId: String, reportNo: Int): GetReportResponse
+
+    suspend fun generateReport(
+        patientId: String,
+        generalCondition: Int?,
+        heartAction: Int?,
+        heartSound: Int?,
+        breathing: Int?,
+        headInjury: Int?
+    ): GetReportResponse
 }

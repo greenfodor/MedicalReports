@@ -60,11 +60,11 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".presentation.patient.ViewPatientActivity"
+            android:name=".presentation.patient.activities.ViewPatientActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".presentation.patient.GenerateReportActivity"
+            android:name=".presentation.patient.activities.GenerateReportActivity"
             android:screenOrientation="portrait" />
     </application>
 </manifest>

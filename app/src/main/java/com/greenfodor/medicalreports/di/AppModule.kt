@@ -4,6 +4,8 @@ import com.greenfodor.medicalreports.persistance.Repository
 import com.greenfodor.medicalreports.persistance.RepositoryImpl
 import com.greenfodor.medicalreports.presentation.home.viewmodels.GetPatientViewModel
 import com.greenfodor.medicalreports.presentation.home.viewmodels.RegisterPatientViewModel
+import com.greenfodor.medicalreports.presentation.patient.viewmodels.GenerateReportViewModel
+import com.greenfodor.medicalreports.presentation.patient.viewmodels.GetReportsViewModel
 import com.greenfodor.medicalreports.presentation.startup.viewmodels.LoginViewModel
 import com.greenfodor.medicalreports.presentation.startup.viewmodels.RegisterViewModel
 import org.koin.android.viewmodel.dsl.viewModel
@@ -19,4 +21,8 @@ val appModule = module {
     viewModel { RegisterPatientViewModel(get()) }
 
     viewModel { GetPatientViewModel(get()) }
+
+    viewModel { GetReportsViewModel(get()) }
+
+    viewModel { GenerateReportViewModel(get()) }
 }

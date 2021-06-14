@@ -6,7 +6,7 @@ data class GetPatientReportsResponse(
     @SerializedName("reportNo")
     val reportNo: Int,
     @SerializedName("patientId")
-    val patientId: Int,
+    val patientId: String,
     @SerializedName("authorName")
     val authorName: String
 )

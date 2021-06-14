@@ -22,6 +22,9 @@
     <string name="generate_report">Generate Report</string>
     <string name="generate">Generate</string>
 
+    <string name="report_no">Report No. %d</string>
+    <string name="author_name">by %s</string>
+
     <!-- Register response -->
     <string name="register_success">User register successfully. Please wait for an administrator to assign you a role.</string>
 
