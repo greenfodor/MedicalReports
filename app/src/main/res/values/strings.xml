@@ -10,10 +10,15 @@
     <string name="gender_hint">Gender</string>
     <string name="register">Register</string>
     <string name="register_patient">Register Patient</string>
+    <string name="read_patient_tag">Read Patient Tag</string>
 
     <string name="write_successful_title">Write Successful</string>
     <string name="write_successful_description">The patient\'s ID was successfully written to the bracelet.</string>
     <string name="done">Done</string>
+
+    <string name="name_label">Name: %s</string>
+    <string name="dob_label">Date of Birth: %s</string>
+    <string name="gender_label">Gender: %s</string>
 
     <!-- Register response -->
     <string name="register_success">User register successfully. Please wait for an administrator to assign you a role.</string>
@@ -23,4 +28,5 @@
     <string name="something_went_wrong">Something went wrong, please try again!</string>
     <string name="nfc_hint">Tap the bracelet to retrieve\nthe patient\'s information</string>
     <string name="nfc_write_hint">Tap the bracelet to register\nit to the patient</string>
+    <string name="patient">Patient</string>
 </resources>

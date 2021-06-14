@@ -54,5 +54,13 @@
         <activity
             android:name=".presentation.home.activities.WriteTagActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.home.activities.ReadTagActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.patient.ViewPatientActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>

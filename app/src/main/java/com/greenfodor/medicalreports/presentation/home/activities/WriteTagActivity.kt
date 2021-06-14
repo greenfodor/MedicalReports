@@ -5,7 +5,6 @@ import android.content.Intent
 import android.nfc.NfcAdapter
 import android.nfc.NfcManager
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.greenfodor.medicalreports.R
@@ -28,17 +27,12 @@ class WriteTagActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         patientId = intent.getStringExtra(PATIENT_ID_EXTRA_KEY) ?: ""
-
-        Log.d("whatever", patientId)
-
         if (patientId.isEmpty()) {
             finish()
             return
         }
 
-        Log.d("whatever", "have id")
         initNfcAdapter()
-        Log.d("whatever", "adapter init")
     }
 
     override fun onResume() {
