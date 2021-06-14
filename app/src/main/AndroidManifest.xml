@@ -62,5 +62,9 @@
         <activity
             android:name=".presentation.patient.ViewPatientActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.patient.GenerateReportActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>

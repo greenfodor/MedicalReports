@@ -59,6 +59,18 @@
         app:layout_constraintTop_toBottomOf="@id/dobTv"
         tools:text="Gender: Male" />
 
+    <Button
+        android:id="@+id/generateReportBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="@string/generate_report"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/genderTv" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reportsRv"
         android:layout_width="0dp"
@@ -67,7 +79,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/genderTv" />
+        app:layout_constraintTop_toBottomOf="@id/generateReportBtn" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/loadingLottie"

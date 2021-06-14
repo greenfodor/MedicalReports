@@ -1,20 +1,19 @@
 package com.greenfodor.medicalreports.presentation.patient
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.greenfodor.medicalreports.R
-import com.greenfodor.medicalreports.databinding.ActivityViewPatientBinding
+import com.greenfodor.medicalreports.databinding.ActivityGenerateReportBinding
 import com.greenfodor.medicalreports.model.dbo.Patient
 import com.greenfodor.medicalreports.utils.viewBinding
 
-class ViewPatientActivity : AppCompatActivity() {
+class GenerateReportActivity : AppCompatActivity() {
 
     companion object {
         const val PATIENT_EXTRA_KEY = "PATIENT_EXTRA_KEY"
     }
 
-    private val binding by viewBinding(ActivityViewPatientBinding::inflate)
+    private val binding by viewBinding(ActivityGenerateReportBinding::inflate)
 
     private lateinit var patient: Patient
 
@@ -22,7 +21,7 @@ class ViewPatientActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        patient = intent.getParcelableExtra(PATIENT_EXTRA_KEY) ?: return
+        patient = intent.getParcelableExtra(ViewPatientActivity.PATIENT_EXTRA_KEY) ?: return
         initViews()
         initActions()
     }
@@ -34,12 +33,8 @@ class ViewPatientActivity : AppCompatActivity() {
     }
 
     private fun initActions() {
-        binding.generateReportBtn.setOnClickListener {
-            val intent = Intent(this, GenerateReportActivity::class.java).apply {
-                putExtra(GenerateReportActivity.PATIENT_EXTRA_KEY, patient)
-            }
-            startActivity(intent)
-            finish()
+        binding.generateBtn.setOnClickListener {
+
         }
     }
 }
