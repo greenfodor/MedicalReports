@@ -1,4 +1,4 @@
-package com.greenfodor.medicalreports.presentation.home
+package com.greenfodor.medicalreports.presentation.home.activities
 
 import android.content.Context
 import android.content.Intent
@@ -7,7 +7,9 @@ import android.nfc.NfcManager
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import com.greenfodor.medicalreports.databinding.ActivityHomeBinding
+import com.greenfodor.medicalreports.model.enums.UserRoleEnum
 import com.greenfodor.medicalreports.presentation.splash.SplashActivity
 import com.greenfodor.medicalreports.utils.NfcUtil
 import com.greenfodor.medicalreports.utils.SessionUtils
@@ -44,6 +46,13 @@ class HomeActivity : AppCompatActivity() {
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
         }
+
+        binding.registerPatientBtn.setOnClickListener {
+            val intent = Intent(this, RegisterPatientActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.registerPatientBtn.isVisible = SessionUtils.getCurrentUserRole() == UserRoleEnum.NURSE.value
     }
 
     private fun initNfcAdapter() {

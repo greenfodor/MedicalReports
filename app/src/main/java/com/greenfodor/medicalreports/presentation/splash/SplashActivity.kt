@@ -6,7 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.greenfodor.medicalreports.databinding.ActivitySplashBinding
-import com.greenfodor.medicalreports.presentation.home.HomeActivity
+import com.greenfodor.medicalreports.presentation.home.activities.HomeActivity
 import com.greenfodor.medicalreports.presentation.startup.activities.LandingActivity
 import com.greenfodor.medicalreports.utils.SessionUtils
 import com.greenfodor.medicalreports.utils.viewBinding
